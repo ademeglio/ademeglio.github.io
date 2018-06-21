@@ -1,4 +1,53 @@
+:root {
+    --main-bg-color1: #F09A9D;
+    --main-txt-color1: rgb(36, 35, 35);
+    --test-bg-color1: red;
+    --test-bg-color2: yellow;
+    --test-bg-color3: aqua;
+}
+
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+
+
+
+a:link {
+
+}
+
+a:hover {
+
+}
+
+a:active {
+
+}
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    body {
+        background-color: var(--test-bg-color1); 
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+        background-color: var(--test-bg-color2);
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    body {
+        background-color: var(--test-bg-color3);
+    }
 }
