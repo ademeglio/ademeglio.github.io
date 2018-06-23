@@ -11,22 +11,25 @@
     margin: 0;
     box-sizing: border-box;
 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 18px;
+    font-family: 'Source Code Pro', monospace;
+    line-height: 1.618em;
 }
 
+html {
+    font-size: 16px;
+}
 
 
 a:link {
-
+    background: transparent;  /*NEEDS UPDADTING*/
 }
 
 a:hover {
-
+    background: transparent;  /*NEEDS UPDADTING*/
 }
 
 a:active {
-
+    background: transparent;  /*NEEDS UPDADTING*/
 }
 
 
