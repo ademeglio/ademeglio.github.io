@@ -50,9 +50,14 @@ header {
     height: 100vw;
 }
 
-header h1 {
+header h1,
+header h2 {
     text-align: center;
     margin-bottom: 0px;
+}
+
+#stringName {
+    color: blue;
 }
 
 header span.comment {
@@ -87,7 +92,7 @@ header span.comment {
         background-color: var(--test-bg-color2);
     }
 
-
+}
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
     body {
