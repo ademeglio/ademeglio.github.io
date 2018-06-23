@@ -45,13 +45,17 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    
     height: 100vw;
 }
 
-header h1,
-header h2 {
+header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header div h1,
+header div h2 {
     text-align: center;
     margin-bottom: 0px;
 }
@@ -60,7 +64,7 @@ header h2 {
     color: blue;
 }
 
-header span.comment {
+header div span.comment {
     display: block;
     margin-bottom: 20px;
     text-align: center;
@@ -68,10 +72,19 @@ header span.comment {
     color: rgb(95, 158, 95);
 }
 
+header p {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
 .myName {
     color: brown;
 }
 
+p {
+    padding: 1rem 0 2rem 0;
+}
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
@@ -80,8 +93,16 @@ header span.comment {
     }
 
     html {
-        font-size: 2vw;
+        font-size: 3vw;
     }
+
+    #main-nav {
+       
+        width:100%;
+        background: black;
+        text-align: center;
+    }
+
 
 
 }
