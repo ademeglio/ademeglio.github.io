@@ -4,7 +4,7 @@
     --main-txt-color1: rgb(36, 35, 35);
    
     /*Variables for setup testing*/
-    --test-bg-color1: red;
+    --test-bg-color1: rgba(255, 0, 0, 0.24);
     --test-bg-color2: yellow;
     --test-bg-color3: rgb(194, 238, 238);
 }
@@ -21,19 +21,6 @@
 
 html {
     font-size: 1.618vw;
-}
-
-
-a:link {
-    background: transparent;  /*NEEDS UPDADTING*/
-}
-
-a:hover {
-    background: transparent;  /*NEEDS UPDADTING*/
-}
-
-a:active {
-    background: transparent;  /*NEEDS UPDADTING*/
 }
 
 /* Containers */
@@ -53,15 +40,26 @@ a:active {
     border-radius: 50rem;
 }
 
+/* Elements and Classes */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+    height: 100vw;
+}
+
 header h1 {
     text-align: center;
-    margin-bottom: -10px;
+    margin-bottom: 0px;
 }
 
 header span.comment {
     display: block;
     margin-bottom: 20px;
     text-align: center;
+    margin-top: -1px;
     color: rgb(95, 158, 95);
 }
 
@@ -76,6 +74,10 @@ header span.comment {
         background-color: var(--test-bg-color1); 
     }
 
+    html {
+        font-size: 2vw;
+    }
+
 
 }
 
@@ -85,8 +87,6 @@ header span.comment {
         background-color: var(--test-bg-color2);
     }
 
-    font-size: 10vw;
-}
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
