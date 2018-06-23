@@ -22,17 +22,23 @@
 <body>
     <div class="container">
         <header>
-            <h2>String <span class="myName">me</span> = 
-                <span id=stringName>"Anthony J. DeMeglio"</span></h2>
-            <h1>career.toCoder(<span class="myName">me</span>)</h1>
-            <span class="comment">/* career change to full stack developer */</span>
-            <p>Hi! My name is Anthony J. DeMeglio, full stack developer, 
-                    welcome to my little spot on the internet.</p>
+            <div>
+                <h2>String <span class="myName">me</span> = 
+                    <span id=stringName>"Anthony J. DeMeglio"</span></h2>
+                <h1>career.toCoder(<span class="myName">me</span>)</h1>
+                <span class="comment">/* career change to full stack developer */</span>
+            </div>
+            <div>
+                <p>Hi! My name is Anthony J. DeMeglio,<br>
+                full stack developer in training.<br>
+                Welcome to my little spot<br>
+                on the internet.</p>
+            </div>
         </header>
 
         <main>
             <section id="aboutMe">
-                <h2>aboutMe("Anthony J. DeMeglio")</h2>
+                <h2>about(<span class="myName">me</span>) {</h2>
                 
                 <p>I wasn’t always a developer. For over a decade, 
                     I had been designing lighting for events and corporate meetings. 
@@ -60,19 +66,21 @@
                 <p>When I’m not solving challenges at work, I’m enjoying time with my awesome family. 
                     When time permits, I enjoy photography, house projects and I’m currently building a kit car!
                 </p>
-                <p class="specialties">Specialties: Lighting Design, Organizing, Negotiating, AutoCad 2010, 
+                <p class="specialties"><strong>Specialties:</strong> Lighting Design, Organizing, Negotiating, AutoCad 2010, 
                     Vectorworks, Unique Business Systems R2,  Adobe Lightroom, basic Adobe Photoshop Skills, 
                     Quickbooks, Java, Spring, Hibernate, TDD, JavaScript, jQuery, HTML5, CSS3, Flexbox, MVC, 
                     Responsive/Mobile-First Design, Structured Query Language (SQL), Transactional Databases/ MSSQL, 
                     Object Oriented Programming, Git, MS Access
                 </p>
+                <h2>}</h2>
                 <div class="otherInterests">
-                    <h3>otherInterests()</h3>
+                    <h3>otherInterests() {</h3>
                     <a href="https://www.imagesbydemeglio.com/" target="_blank">My photography</a>
                     <a href="https://www.facebook.com/groups/CBUS818/" target="_blank">My kit car build</a>
                     <a href="https://www.factoryfive.com/818/818c/" target="_blank">The car I'm building, Factory Five Racing 818C</a>
                     <a href="https://bartha.com/" target="_blank">Where I currently work, Bartha</a>
                     <a href="http://www.brillianteventsandmeetings.com/" target="_blank">My production company</a>
+                    <h3>}</h3>
                 </div>
                 <div class="photoContainer">
                     <img src="./images/AnthonyJDeMeglio_small.jpg" 
@@ -83,7 +91,7 @@
                 </div>
             </section>
             <section id="myProjects">
-                <h2>viewProjects()</h2>
+                <h2>viewProjects(<span class="myName">me</span>) {</h2>
                 <p>Here are just some of my favorite projects completed for WeCanCodeIT.</p>
                 <div id="projects">
                     <article>
@@ -109,9 +117,10 @@
                     </article>
                 </div>
                 <a href="https://github.com/ademeglio/">More Projects at Github</a>
+                <h2>}</h2>
             </section>
             <section id="myBlog">
-                <h2>career.toCoder("Anthony J. DeMeglio").blog()</h2>
+                <h2>career.toCoder(<span class="myName">me</span>).blog()</h2>
                 <p>/* transition to full stack developer</p>
                 <div id="blogPosts">
                     <article>
@@ -140,18 +149,18 @@
                 </div>
             </section>
             <section id="contactMe">
-                <h2>contactMe()</h2>
-                <p>Questions, comments, please feel free to 
+                <h2>contact(<span class="myName">me</span>)</h2>
+                <p>Questions or comments, please feel free to 
                     <a href="mailto:anthonyJ@demeglio.info">email me</a>!</p>
                 <p><a href="https://www.linkedin.com/in/anthonyjdemeglio/">LinkedIn</a></p>
             </section>
         </main>
 
-        <nav>
-            <a href="#aboutMe">aboutMe()</a>
-            <a href="#myProjects">viewProjects()</a>
-            <a href="#myBlog">viewBlog()</a>
-            <a href="#contactMe">contactMe()</a>
+        <nav id="main-nav">
+            <a href="#aboutMe">about(<span class="myName">me</span>)</a>
+            <a href="#myProjects">viewProjects(<span class="myName">me</span>)</a>
+            <a href="#myBlog">viewBlog(<span class="myName">me</span>)</a>
+            <a href="#contactMe">contact(<span class="myName">me</span>)</a>
         </nav>
 
         <footer>
