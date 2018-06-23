@@ -28,15 +28,20 @@ html {
     width: 95%;
     margin: 5px auto;
     background: var(--main-bg-color1);
+    margin-bottom: 1em;
 }
 
 .photoContainer {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 25%;
 }
 
 .photoContainer img {
     width: 100%;
-    height: 100%;
+    
     border-radius: 50rem;
 }
 
@@ -44,7 +49,8 @@ html {
 header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     height: 100vw;
 }
 
@@ -64,7 +70,7 @@ header div h2 {
     color: blue;
 }
 
-header div span.comment {
+.comment {
     display: block;
     margin-bottom: 20px;
     text-align: center;
@@ -73,7 +79,7 @@ header div span.comment {
 }
 
 header p {
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: center;
 }
@@ -83,18 +89,31 @@ header p {
 }
 
 p {
-    padding: 1rem 0 2rem 0;
+    padding: .5rem .5rem;
 }
 
+section {
+    padding-top: .5em;
+}
+
+#myBlog h2 {
+    text-align: center;
+}
+
+#specialties {
+    padding-top: 1em;
+}
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
 
     width: 95%;
-    margin: 0 auto;
+    margin: 0px auto 0;
     text-align: right;
     padding-right: .5em;
+    
+    background: var(--main-bg-color1);
 }
 
 /* Mobile Styles */
@@ -113,12 +132,12 @@ footer {
         justify-content: space-evenly;
 
         position: fixed;
-        bottom: 2em;
+        bottom: 0;
         
         width:95%;
-        margin: 1em auto;
+        margin: 0 auto 1.5em;
 
-        background: black;
+        background: red;
         text-align: center;
     }
 
@@ -126,8 +145,10 @@ footer {
         text-decoration: none;
         color: var(--main-txt-color1);
         background: var(--main-bg-color1);
-        border: 1px solid black;
-        padding: 2em;
+        border: 1.5px solid black;
+        padding: 1.3em;
+        font-size: 4vw;
+      
 
     }
 
