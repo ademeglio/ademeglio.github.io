@@ -35,8 +35,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25%;
-    height: 25%;
+    width: 20%;
+    height: 20%;
 }
 
 .photoContainer img {
@@ -72,7 +72,7 @@ header div h2 {
 
 .comment {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
     margin-top: -1px;
     color: rgb(95, 158, 95);
