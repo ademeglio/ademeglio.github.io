@@ -25,7 +25,7 @@ html {
 
 /* Containers */
 .container {
-    width: 90%;
+    width: 95%;
     margin: 5px auto;
     background: var(--main-bg-color1);
 }
@@ -86,6 +86,17 @@ p {
     padding: 1rem 0 2rem 0;
 }
 
+
+footer {
+    position: absolute;
+    bottom: 0;
+
+    width: 95%;
+    margin: 0 auto;
+    text-align: right;
+    padding-right: .5em;
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
     body {
@@ -97,12 +108,28 @@ p {
     }
 
     #main-nav {
-       
-        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        position: fixed;
+        bottom: 2em;
+        
+        width:95%;
+        margin: 1em auto;
+
         background: black;
         text-align: center;
     }
 
+    #main-nav a {
+        text-decoration: none;
+        color: var(--main-txt-color1);
+        background: var(--main-bg-color1);
+        border: 1px solid black;
+        padding: 2em;
+
+    }
 
 
 }
