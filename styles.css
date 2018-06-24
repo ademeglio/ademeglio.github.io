@@ -69,9 +69,12 @@ header div h2 {
     margin-bottom: 0px;
 }
 
+#comment-container {
+    
+    margin-left: 2.1em;
+}
 #text {
         display: inline-block;
-        margin-left: 2.1em;
         margin-bottom: 10px;
         text-align: left;
         
@@ -80,8 +83,8 @@ header div h2 {
 }
 
 #blinker {
-    display: none;
-}
+    color: var(--main-txt-color1);
+} 
 
 
 .divider-bottom {
