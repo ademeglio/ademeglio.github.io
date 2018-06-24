@@ -19,9 +19,9 @@
     <div class="container">
         <header>
             <div>
-                <h2>String <span class="myName">me</span> = 
+                <h2>String <span class="varTypeColor">me</span> = 
                     <span id=stringName>"Anthony J. DeMeglio"</span>;</h2>
-                <h1>career.toCoder(<span class="myName">me</span>);</h1>
+                <h1>career.toCoder(<span class="varTypeColor">me</span>);</h1>
                 <div id="comment-container">
                     <span><span id="text"></span> 
                     <span id="blinker">|</span></span>
@@ -48,7 +48,7 @@
         <main>
             
             <section id="aboutMe">
-                <h2>about(<span class="myName">me</span>) {</h2>
+                <h2>about(<span class="varTypeColor">me</span>) {</h2>
                 <span class="divider-bottom"></span>
                 <p>I wasn’t always a developer. For over a decade, 
                     I had been designing lighting for events and corporate meetings. 
@@ -73,30 +73,43 @@
                     problems. I am able to manage multiple projects in a deadline-driven environment 
                     without breaking a sweat and work with other people to troubleshoot and debug issues.
                 </p>
-                <p>When I’m not solving challenges at work, I’m enjoying time with my awesome family. 
-                    When time permits, I enjoy photography, house projects and I’m currently building a kit car!
-                </p>
-                <p id="specialties"><strong>Specialties:</strong> Lighting Design, Organizing, Negotiating, AutoCad 2010, 
+                <div id="otherInterests">
+                    <h3>otherInterests() {</h3>
+                    <p>When I’m not solving challenges at work, I’m enjoying time with my awesome family. 
+                        When time permits, I enjoy photography, house projects and I’m currently building a kit car!
+                    </p>
+
+                    <div id="otherInterestsButton">
+                        <button class="button">otherInterests()</button>
+                    </div>
+
+                    <div id="aside-modal">              
+                        <aside>
+                            <h3>otherInterests() {</h3>
+                            <ul>
+                                <a href="https://www.imagesbydemeglio.com/" target="_blank">My photography</a>
+                                <a href="https://www.facebook.com/groups/CBUS818/" target="_blank">My kit car build</a>
+                                <a href="https://www.factoryfive.com/818/818c/" target="_blank">The car I'm building, Factory Five Racing 818C</a>
+                                <a href="https://bartha.com/" target="_blank">Where I currently work, Bartha</a>
+                                <a href="http://www.brillianteventsandmeetings.com/" target="_blank">My production company</a>
+                            </ul>
+                            <h3>}</h3>
+                        </aside>
+                    </div>
+                    <h3>}</h3>
+                </div>
+                <h3 id="specialties">Specialties:</h3>
+                <p>Lighting Design, Organizing, Negotiating, AutoCad 2010, 
                     Vectorworks, Unique Business Systems R2,  Adobe Lightroom, basic Adobe Photoshop Skills, 
                     Quickbooks, Java, Spring, Hibernate, TDD, JavaScript, jQuery, HTML5, CSS3, Flexbox, MVC, 
                     Responsive/Mobile-First Design, Structured Query Language (SQL), Transactional Databases/ MSSQL, 
                     Object Oriented Programming, Git, MS Access
                 </p>
                 <h2>}</h2>
-                <div class="otherInterests">
-                    <h3>otherInterests() {</h3>
-                    <a href="https://www.imagesbydemeglio.com/" target="_blank">My photography</a>
-                    <a href="https://www.facebook.com/groups/CBUS818/" target="_blank">My kit car build</a>
-                    <a href="https://www.factoryfive.com/818/818c/" target="_blank">The car I'm building, Factory Five Racing 818C</a>
-                    <a href="https://bartha.com/" target="_blank">Where I currently work, Bartha</a>
-                    <a href="http://www.brillianteventsandmeetings.com/" target="_blank">My production company</a>
-                    <h3>}</h3>
-                </div>
-                
             </section>
             
             <section id="myProjects">
-                <h2>viewProjects(<span class="myName">me</span>) {</h2>
+                <h2>viewProjects(<span class="varTypeColor">me</span>) {</h2>
                 <span class="divider-bottom"></span>
                 <p>Here are just some of my favorite projects completed for WeCanCodeIT.</p>
                 <div id="projects">
@@ -128,7 +141,7 @@
             </section>
             
             <section id="myBlog">
-                <h2>career.toCoder(<span class="myName">me</span>).blog()</h2>
+                <h2>career.toCoder(<span class="varTypeColor">me</span>).blog()</h2>
                 <p class="comment">/* thoughts of a full stack developer */</p>
                 <div id="blogPosts">
                     <article>
@@ -158,7 +171,7 @@
             </section>
             
             <section id="contactMe">
-                <h2>contact(<span class="myName">me</span>)</h2>
+                <h2>contact(<span class="varTypeColor">me</span>)</h2>
                 <span class="divider-bottom"></span>
                 <p>Questions or comments, please feel free to connect with the links
                     located at the bottom of the page.
@@ -178,10 +191,10 @@
             
                 <nav id="main-nav">
                     <div>
-                        <a href="#aboutMe">about(<span class="myName">me</span>)</a>
-                        <a href="#myProjects">viewProjects(<span class="myName">me</span>)</a>
-                        <a href="#myBlog">viewBlog(<span class="myName">me</span>)</a>
-                        <a href="#contactMe">contact(<span class="myName">me</span>)</a>
+                        <a href="#aboutMe">about(<span class="varTypeColor">me</span>)</a>
+                        <a href="#myProjects">viewProjects(<span class="varTypeColor">me</span>)</a>
+                        <a href="#myBlog">viewBlog(<span class="varTypeColor">me</span>)</a>
+                        <a href="#contactMe">contact(<span class="varTypeColor">me</span>)</a>
                     </div>
                 </nav>
             </div>

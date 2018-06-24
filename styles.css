@@ -69,6 +69,10 @@ header div h2 {
     margin-bottom: 0px;
 }
 
+#stringName {
+    color: blue;
+}
+
 #comment-container {
     
     margin-left: 2.1em;
@@ -86,7 +90,6 @@ header div h2 {
     color: var(--main-txt-color1);
 } 
 
-
 .divider-bottom {
     display: block;
     height: 1px;
@@ -98,11 +101,6 @@ section {
     padding-top: 3em;
     min-height: 100vh;
 }
-#stringName {
-    color: blue;
-}
-
-
 
 header p {
     width: 100%;
@@ -110,7 +108,7 @@ header p {
     text-align: center;
 }
 
-.myName {
+.varTypeColor {
     color: brown;
 }
 
@@ -118,13 +116,44 @@ p {
     padding: .5rem .5rem;
 }
 
+#otherInterests {
+    padding-left: 2em;
+    
+}
 
-#myBlog h2 {
+#otherInterestsButton {
+    margin-left: -2em;
     text-align: center;
+}
+
+.button {
+    padding: .5em;
+    background: var(--main-bg-color1);
+    color: var(--main-txt-color1);
+    border: 1px solid var(--main-bg-color2);
+    box-shadow: 0px 0px 10px var(--main-bg-color2) inset; 
+}
+
+.button:hover {
+    background: var(--main-bg-color2);
+    color: white;
+    box-shadow: 0px 0px 10px var(--main-bg-color1) inset;
+}
+    
+
+
+#aside-modal {
+    padding-left: 2em;
+    background: blue;
+    display:none;
 }
 
 #specialties {
     padding-top: 1em;
+}
+
+#myBlog h2 {
+    text-align: center;
 }
 
 footer {
