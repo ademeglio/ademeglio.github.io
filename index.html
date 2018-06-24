@@ -15,7 +15,9 @@
     <title>Anthony J. DeMeglio - Full Stack Developer</title>
 
     <script>
-        /* FUTURE USE */
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
     </script>
     
 </head>
@@ -25,7 +27,7 @@
             <div>
                 <h2>String <span class="myName">me</span> = 
                     <span id=stringName>"Anthony J. DeMeglio"</span></h2>
-                <h1>career.toCoder(<span class="myName">me</span>)</h1>
+                <h1>career.toCoder(<span class="myName">me</span>);</h1>
                 <span class="comment">/* change career to full stack developer */</span>
             </div>
             <div class="photoContainer">
@@ -158,6 +160,13 @@
             </section>
         </main>
         <div id="nav-container">
+
+            <div class="menu-container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            
             <nav id="main-nav">
                 <div>
                     <a href="#aboutMe">about(<span class="myName">me</span>)</a>
