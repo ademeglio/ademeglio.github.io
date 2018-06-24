@@ -1,6 +1,7 @@
 :root {
     /*Variables*/
     --main-bg-color1: rgb(245, 238, 239);
+    --main-bg-color2: #5F317A; /*BEAM Purple*/
     --main-txt-color1: rgb(36, 35, 35);
    
     /*Variables for setup testing*/
@@ -52,6 +53,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     height: 95vw;
+    margin-top: 3em;
 }
 
 header div {
@@ -64,6 +66,13 @@ header div h1,
 header div h2 {
     text-align: center;
     margin-bottom: 0px;
+}
+
+.divider {
+    display: block;
+    height: 3em;
+    width: 100%;
+    background: var(--main-bg-color2);
 }
 
 #stringName {
@@ -107,13 +116,17 @@ section {
 footer {
     position: fixed;
     bottom: 0;
+    left:0;
+    height: 3em;
 
-    width: 95%;
+    width: 100%;
     margin: 0px auto 0;
     text-align: right;
     padding-right: .5em;
+    padding-top: .5em;
     
-    background: var(--main-bg-color1);
+    background: var(--main-bg-color2);
+    color: white;
 }
 
 /* Mobile Styles */
@@ -128,27 +141,35 @@ footer {
 
     #nav-container {
         display:flex;
+        justify-content: flex-end;
         position: fixed;
-
-        bottom: 0;
+        
+        Top: 0;
         left: 0;
 
         width: 100%;
-        margin: 0 auto 2em;
-        background: blue;
+        height: 3em;
+        margin: 0 auto;
+        background: var(--main-bg-color2);
     }
 
-   /* #main-nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around; 
-        margin: 2em auto 1.6em;
-        padding: 2em 0;
+   #main-nav {
+       
+        flex-direction: column;
+        
+        
+        padding: 0em 0;       /* top & bottom was 2em*/
 
         background: red;
         
-    }*/
-    #main-nav {
+    }
+
+    #main-nav > div{
+        display: none;
+        background: purple;
+        position: absolute;
+    }
+    /*#main-nav {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -158,7 +179,7 @@ footer {
 
         background: red;
         
-    }
+    }*/
 
     #main-nav a {
         display: flex;
