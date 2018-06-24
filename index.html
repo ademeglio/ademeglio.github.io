@@ -22,8 +22,10 @@
                 <h2>String <span class="myName">me</span> = 
                     <span id=stringName>"Anthony J. DeMeglio"</span>;</h2>
                 <h1>career.toCoder(<span class="myName">me</span>);</h1>
-                <span class="comment">/* change career to full stack developer */</span>
+                <span id="text"></span>
+                <span id="blinker">|</span>
             </div>
+            
             <div class="photoContainer">
                 <img src="./images/AnthonyJDeMeglio_small.jpg" 
                     srcset="images/AnthonyJDeMeglio_small.jpg 1x,
@@ -31,6 +33,7 @@
                     alt="Handsome middle-aged man with glasses"
                     style="max-width: 200px"/>
             </div>
+            
             <div>
                 <p>Hi! My name is Anthony J. DeMeglio,<br>
                 full stack developer in training.<br>
@@ -190,6 +193,11 @@
             <a href="#"><small>&copy; 2018 Anthony J. DeMeglio</small></a>
         </footer>
     </div>
-    <script src="./scrip.js"></script>
+    <script src="./script.js"></script>
+    <script src="./typing.min.js"></script>  <!--www.cssscript.com/javascript-library-simulate-typing-effect-typing-js/-->
+    <script>
+        var typing=Typing("/&#42; change career to full stack developer &#42;/");
+        typing();
+    </script>
 </body>
 </html>

@@ -69,6 +69,21 @@ header div h2 {
     margin-bottom: 0px;
 }
 
+#text {
+        display: inline-block;
+        margin-left: 2.1em;
+        margin-bottom: 10px;
+        text-align: left;
+        
+        margin-top: -1px;
+        color: rgb(95, 158, 95);
+}
+
+#blinker {
+    display: none;
+}
+
+
 .divider-bottom {
     display: block;
     height: 1px;
@@ -84,13 +99,7 @@ section {
     color: blue;
 }
 
-.comment {
-    display: block;
-    margin-bottom: 10px;
-    text-align: center;
-    margin-top: -1px;
-    color: rgb(95, 158, 95);
-}
+
 
 header p {
     width: 100%;
