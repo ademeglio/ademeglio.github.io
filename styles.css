@@ -187,30 +187,29 @@ footer {
         padding-top: 2px;
         position: absolute;
         top: 2.5em;
+
     }
     
     #main-nav > div{
         width: 100%;
-        background: var(--main-bg-color2);
-        box-shadow: 0 0 1px white inset;
+        background: var(--main-bg-color1);
+        box-shadow: 0 0 1px var(--main-bg-color2);
+
     }
 
     #main-nav a {
         display: flex;
         justify-content: center;
         text-decoration: none;
-        color: var(--main-txt-color2);
-        background: var(--main-bg-color2);
-        border: .5px solid var(--main-bg-color1);
-        box-shadow: 0 0 1px white inset;
+        
+        background: var(--main-bg-color1);
+        border: .5px solid var(--main-bg-color2);
+        box-shadow: 0 0 1px var(--main-bg-color2) inset;
         padding: 1em;
         font-size: 4vw;
         width: 100%
     }
 
-    #main-nav a span {
-        color: black;
-    }
 
     /* OPEN MENU FUNCTIONALITY */
     .show .bar1 {
