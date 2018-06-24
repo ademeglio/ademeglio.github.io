@@ -41,9 +41,9 @@
 
         <main>
             <section id="aboutMe">
-                <span class="divider"></span>
-                <h2>about(<span class="myName">me</span>) {</h2>
                 
+                <h2>about(<span class="myName">me</span>) {</h2>
+                <span class="divider"></span>
                 <p>I wasn’t always a developer. For over a decade, 
                     I had been designing lighting for events and corporate meetings. 
                     Having first studied and trained at the <em>University of North Carolina 
@@ -153,13 +153,15 @@
                 <p><a href="https://www.linkedin.com/in/anthonyjdemeglio/">LinkedIn</a></p>
             </section>
         </main>
+        
         <div id="nav-container">
 
-            <div class="menu-container" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-              
+            <div class="menu-container" onclick="toggleMenu(this)">
+                <div id="menu-bars-container">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
             
                 <nav id="main-nav">
                     <div>

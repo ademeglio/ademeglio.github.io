@@ -3,6 +3,7 @@
     --main-bg-color1: rgb(245, 238, 239);
     --main-bg-color2: #5F317A; /*BEAM Purple*/
     --main-txt-color1: rgb(36, 35, 35);
+    --main-txt-color2: rgb(245, 238, 239);
    
     /*Variables for setup testing*/
     --test-bg-color1: rgba(255, 0, 0, 0.24);
@@ -70,7 +71,7 @@ header div h2 {
 
 .divider {
     display: block;
-    height: 3em;
+    height: 0.5em;
     width: 100%;
     background: var(--main-bg-color2);
 }
@@ -145,9 +146,10 @@ footer {
     #nav-container {
         display:flex;
         justify-content: flex-end;
+        align-items: center;
         position: fixed;
         
-        Top: 0;
+        top: 0;
         left: 0;
 
         width: 100%;
@@ -156,60 +158,75 @@ footer {
         background: var(--main-bg-color2);
     }
 
-   #main-nav {
-        flex-direction: column;
-        background: red;
-    }
-
-    #main-nav > div{
-        display: block;
-        background: purple;
-        position: absolute;
-    }
-
-
-    #main-nav a {
-        display: flex;
-        justify-content: center;
-        text-decoration: none;
-        color: var(--main-txt-color1);
-        background: var(--main-bg-color1);
-        border: 1.5px solid black;
-        padding: .5em;
-        font-size: 4vw;
-         
-    }
     .menu-container {
-        display: inline-block;
         cursor: pointer;
-        padding-right: 5px;
+        padding-right: 0;
+        text-align: right;
+        width: 100%;
+        height: 3em;
     }
     
+    .menu-container #menu-bars-container {    
+        display: inline-block;
+        padding-right: 5px;
+    }
+
     .bar1, .bar2, .bar3 {
         width: 25px;
         height: 2px;
         background-color: white;
         margin: 6px 0;
-        transition: 0.4s;
-        
+        transition: 0.4s; 
+    }
+
+    #main-nav {
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        transition: 1s;
+        padding-top: 2px;
+        position: absolute;
+        top: 2.5em;
     }
     
-    .change .bar1 {
+    #main-nav > div{
+        width: 100%;
+        background: var(--main-bg-color2);
+        box-shadow: 0 0 1px white inset;
+    }
+
+    #main-nav a {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: var(--main-txt-color2);
+        background: var(--main-bg-color2);
+        border: .5px solid var(--main-bg-color1);
+        box-shadow: 0 0 1px white inset;
+        padding: 1em;
+        font-size: 4vw;
+        width: 100%
+    }
+
+    #main-nav a span {
+        color: black;
+    }
+
+    /* OPEN MENU FUNCTIONALITY */
+    .show .bar1 {
         -webkit-transform: rotate(-45deg) translate(-9px, 6px);
         transform: rotate(-45deg) translate(-4px, 6px);
     }
     
-    .change .bar2 {opacity: 0;}
+    .show .bar2 {opacity: 0;}
     
-    .change .bar3 {
+    .show .bar3 {
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-5px, -8px);
     }
     
-    .change #main-nav > div{
-        display: block;
-        -webkit-transition: display .5s;
-        transition: .5s;
+   .show #main-nav > div{
+        height:20em;
     }
 
 
