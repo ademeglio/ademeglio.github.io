@@ -144,7 +144,7 @@ button.button:focus {
 
 #aside-modal {                  /* Hidden Modal */
     visibility: hidden;
-  
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -163,9 +163,9 @@ button.button:focus {
 }
 
 #aside-modal.show {
-    display: flex;
     visibility: visible;
     opacity: 1;
+    transition: opacity 1s;
 
 }
 
