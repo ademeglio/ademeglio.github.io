@@ -70,6 +70,12 @@ p {
     text-decoration: underline;
 }
 
+.textOverflow {
+    /*white-space: nowrap;*/
+    overflow: hidden;
+    text-overflow:ellipsis; 
+}
+
 /*  HEADER */
 header {
     display: flex;
@@ -127,6 +133,7 @@ section {
 
 #otherInterests, 
 #specialties {
+    padding-top: 1em;
     padding-left: 2em;
 }
 
@@ -263,10 +270,90 @@ grid.item1:hover .toolTipText {
 }
 
 /* Projects */
+#projects {
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    grid-gap: 10px;
+    background: var(--test-bg-color1);
+    width: 100%;
+}
+
+#projects article {
+    border: double var(--main-bg-color2);
+    display: flex;
+    max-height: 25em;
+    width: 40%;
+    margin: 1em;
+}
+
+.fullProjDesc {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.fullProjDesc a,
+.fullProjDesc img {
+    text-align: center;
+    align-self: center;
+}
+
+.fullProjDesc h3 {
+    background: var(--main-bg-color2);
+    color: var(--main-txt-color2);
+    width: 100%;
+}
+
+.fullProjDesc h3, h4{
+    padding-left: 1em;
+}
+
+.fullProjDesc h4 {
+    border-top: purple;
+    border-top-style: dashed;
+    border-top-width:  1px;
+    padding-top: .5em;
+}
+
+.fullProjDesc img {
+    padding: .5em;
+}
+.fullProjDesc p {
+    padding-left: 1.5em;
+}
+
+.fullProjDesc a {
+    text-decoration: none;
+    background: var(--main-bg-color2);
+    color: var(--main-txt-color2);
+    padding: .5em;
+    margin-bottom: .5em;
+}
+
+#github {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: .5em;
+}
+
+#github a {
+    text-decoration: none;
+}
+
+#github img {
+    padding: .5em;
+    width: 80%;
+}
 
 
 
-/* Blog */
+/* BLOG */
 #myBlog p.comment {
     font-size: 100%;
 }
@@ -414,6 +501,13 @@ footer small {
     
    .show #main-nav > div{
         height:20em;
+    }
+
+    /* PROJECTS */
+    #projects article {
+        flex-direction: column;
+        width: 90%;
+        margin: .5em;
     }
 
 
