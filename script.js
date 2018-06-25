@@ -13,3 +13,24 @@ function toggleMenu(menuContainer) {
         menuContainer.classList.add('show');
     }
 }
+
+// otherInterests modal
+function showModal() {
+    const modal = document.getElementById('aside-modal');
+    modal.classList.add('show');
+  
+    modal.onclick = closeModal;
+  
+    const modalContent = document.querySelector('#aside-modal > aside');
+    modalContent.onclick = function(event) {
+      console.log(event);
+      event.stopPropagation();
+    };
+  }
+  
+  function closeModal() {
+    const modal = document.getElementById('aside-modal');
+    modal.classList.remove('show');
+  }
+  
+  otherInterestsButton.onclick = showModal;

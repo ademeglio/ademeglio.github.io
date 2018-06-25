@@ -118,7 +118,6 @@ p {
 
 #otherInterests {
     padding-left: 2em;
-    
 }
 
 #otherInterestsButton {
@@ -142,11 +141,37 @@ p {
     
 
 
-#aside-modal {
-    padding-left: 2em;
-    background: blue;
-    display:none;
+#aside-modal {                  /* Hidden Modal */
+    display: none;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    background: rgba(0,0,0,0.5);
 }
+
+#aside-modal.show {
+    display: flex;
+}
+
+#aside-modal > aside {
+    background: var(--main-bg-color1);
+    color: var(--main-txt-color1);
+    border: 1px solid #000;
+    width: 350px;
+    height: 300px;
+    border-radius: .5em;
+  
+    transition: 0.3s;
+  }
+
 
 #specialties {
     padding-top: 1em;
