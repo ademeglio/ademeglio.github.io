@@ -26,6 +26,10 @@ html {
     font-size: 1.618vw;
 }
 
+p {
+    padding: .5rem .5rem;
+}
+
 /* Containers */
 .container {
     width: 95%;
@@ -47,7 +51,26 @@ html {
     border-radius: 100rem;
 }
 
-/* Elements and Classes */
+/* Generic Classes*/
+
+.comment {
+    display: inline-block;
+    margin-bottom: 10px;
+    text-align: left;
+    
+    margin-top: -1px;
+    color: rgb(95, 158, 95);
+}
+
+.varTypeColor {
+    color: brown;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/*  HEADER */
 header {
     display: flex;
     flex-direction: column;
@@ -69,6 +92,12 @@ header div h2 {
     margin-bottom: 0px;
 }
 
+header p {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
 #stringName {
     color: blue;
 }
@@ -77,19 +106,11 @@ header div h2 {
     margin-left: 2.1em;
 }
 
-.comment {
-        display: inline-block;
-        margin-bottom: 10px;
-        text-align: left;
-        
-        margin-top: -1px;
-        color: rgb(95, 158, 95);
-}
-
 #blinker {
     color: var(--main-txt-color1);
 } 
 
+/* MAIN SECTIONS */
 .divider-bottom {
     display: block;
     height: 1px;
@@ -102,25 +123,15 @@ section {
     min-height: 100vh;
 }
 
-header p {
-    width: 100%;
-    margin: auto;
-    text-align: center;
-}
-
-.varTypeColor {
-    color: brown;
-}
-
-p {
-    padding: .5rem .5rem;
-}
+/* ABOUT ME */
 
 #otherInterests, 
 #specialties {
     padding-left: 2em;
 }
 
+
+/* ABOUT ME: Other Interests */
 #otherInterestsButton {
     margin-left: -2em;
     text-align: center;
@@ -141,10 +152,9 @@ button.button:focus {
     box-shadow: 0px 0px 10px var(--main-bg-color1) inset;
 }
     
-
-
-#aside-modal {                  /* Hidden Modal */
-    visibility: hidden;
+#aside-modal {                  
+    /* Hidden Modal */
+    visibility: hidden;             
     display: flex;
     position: fixed;
     top: 0;
@@ -192,7 +202,6 @@ button.button:focus {
     background: var(--main-bg-color1);
     grid-template-columns: 1fr 1fr;
    grid-gap: 5px;
-    
 }
 
 .grid-container div{
@@ -214,8 +223,7 @@ button.button:focus {
     grid-column: 1 / 3;
 }
 
-
-/* Tool Tip Text */
+/* Tool Tip Text TODO Needs Work */
 .toolTipText {
     visibility: hidden;
     display: inline;
@@ -254,14 +262,16 @@ grid.item1:hover .toolTipText {
     padding-top: 1em;
 }
 
+/* Projects */
+
+
+
+/* Blog */
 #myBlog p.comment {
     font-size: 100%;
 }
 
-.underline {
-    text-decoration: underline;
-}
-
+/* Footer */
 footer {
     position: fixed;
     bottom: 0;
@@ -302,8 +312,7 @@ footer small {
 
 
 
-
-/* Mobile Styles */
+/* MOBILE STYLES */
 @media only screen and (max-width: 400px) {
     body {
         background-color: var(--main-bg-color1); 
@@ -410,14 +419,14 @@ footer small {
 
 }
 
-/* Tablet Styles */
+/* TABLET STYLES */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
     body {
         background-color: var(--test-bg-color2);
     }
 
 }
-/* Desktop Styles */
+/* DESKTOP STYLES */
 @media only screen and (min-width: 961px) {
     body {
         background-color: var(--test-bg-color3);
