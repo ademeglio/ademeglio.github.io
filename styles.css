@@ -74,10 +74,10 @@ header div h2 {
 }
 
 #comment-container {
-    
     margin-left: 2.1em;
 }
-#text {
+
+.comment {
         display: inline-block;
         margin-bottom: 10px;
         text-align: left;
@@ -116,7 +116,8 @@ p {
     padding: .5rem .5rem;
 }
 
-#otherInterests {
+#otherInterests, 
+#specialties {
     padding-left: 2em;
 }
 
@@ -249,8 +250,12 @@ button.button:focus {
     padding-top: 1em;
 }
 
-#myBlog h2 {
-    text-align: center;
+#myBlog p.comment {
+    font-size: 100%;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 footer {
