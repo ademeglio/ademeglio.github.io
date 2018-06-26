@@ -71,7 +71,7 @@ p {
 }
 
 .textOverflow {
-    /*white-space: nowrap;*/
+    white-space: nowrap;
     overflow: hidden;
     text-overflow:ellipsis; 
 }
@@ -295,6 +295,8 @@ grid.item1:hover .toolTipText {
     justify-items: center;
 }
 
+
+
 .fullProjDesc h3 {
     background: var(--main-bg-color2);
     color: var(--main-txt-color2);
@@ -328,11 +330,16 @@ grid.item1:hover .toolTipText {
 }
 .fullProjDesc button.button {
     width: 43%;
-    margin-bottom: .5em;
+    margin: .5em;
 }
 
 .moreInfo {
     visibility: visible;
+}
+
+div.projectSkills {
+    display: none;
+    opacity: 0;
 }
 
 .fullProjDesc button.button a.gitReposit{
@@ -358,8 +365,6 @@ grid.item1:hover .toolTipText {
     padding: .5em;
     width: 80%;
 }
-
-
 
 /* BLOG */
 #myBlog p.comment {
