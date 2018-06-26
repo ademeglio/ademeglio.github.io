@@ -363,7 +363,7 @@ grid.item1:hover .toolTipText {
 #projects {
     display: flex;
     flex-flow: row wrap;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     justify-content: space-around;
     align-content: space-around;
     grid-gap: 10px;
@@ -517,6 +517,7 @@ footer small {
     #main-nav {
         font-size: 4vw;
         width: 100%;
+        top: 2em;
     }
 
     /* PROJECTS */
@@ -549,21 +550,25 @@ footer small {
     }
 
     /* Desktop Nav Menu */
-  #nav-container {
-      height: 2.2em;
-  }
+    #nav-container {
+      height: 2.5em;
+    }
 
-  .menu-container {
-      height: 2em;
-      padding-right: .5em;
-  }
+    .menu-container {
+        height: 2em;
+        padding-right: .5em;
+    }
 
-  #main-nav {
-      top: 2em;
-      width: 25%;
-      right: .5em;
+    #main-nav {
+        top: 2.25em;
+        width: 25%;
+        right: .5em;
       
-  }
+    }
+
+    /* Desktop Projects */
+
+
 
     /* Desktop Footer */
     footer {
