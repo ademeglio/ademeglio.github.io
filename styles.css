@@ -372,16 +372,15 @@ grid.item1:hover .toolTipText {
 }
 
 #projects article {
-    border: double var(--main-bg-color2);
+    border: solid var(--main-bg-color2);
     display: flex;
-    /*max-height: 25em;*/
     width: 30%;
     margin: 1em;
 }
 
 .fullProjDesc {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-items: center;
     width: 100%;
 }
@@ -403,8 +402,10 @@ grid.item1:hover .toolTipText {
     padding-left: 1em;
 }
 
-.fullProjDesc p.textOverflow {
-    padding-left: 1.5em;
+.fullProjDesc p,
+.fullProjDesc div.projectSkills,
+.fullProjDesc button.button {
+    display: none;
 }
 
 .fullProjDesc img {
@@ -427,16 +428,6 @@ grid.item1:hover .toolTipText {
 .moreInfo {
     visibility: visible;
     opacity: 1;
-}
-
-div.projectSkills {
-    display: none;
-    opacity: 0;
-}
-
-.fullProjDesc button.button a.gitReposit{
-    display: none;
-    opacity: 0;
 }
 
 /* Project Box Footer*/
