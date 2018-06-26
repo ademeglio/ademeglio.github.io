@@ -463,7 +463,7 @@ div.projectSkills {
     font-size: 100%;
 }
 
-/* Footer */
+                                                    /* Footer */
 footer {
     position: fixed;
     bottom: 0;
@@ -500,6 +500,7 @@ footer small {
     display: inline-block;
     color: white;
     padding-top: 2em;
+    
 }
 
 
@@ -528,6 +529,7 @@ footer small {
         width: 90%;
         margin: .5em;
     }
+
 
 
 }
@@ -574,7 +576,11 @@ footer small {
 
     /* Desktop Footer */
     footer {
-        height: 2em;
+        height: 2.5em;
     }
 
+    footer small {
+        padding-top: 0.8vw;
+        font-size: 0.8vw;
+    }
 }
