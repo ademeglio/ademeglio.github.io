@@ -30,7 +30,7 @@ p {
     padding: .5rem .5rem;
 }
 
-/* Containers */
+                                                /* Containers */
 .container {
     width: 95%;
     margin: 5px auto;
@@ -51,7 +51,7 @@ p {
     border-radius: 100rem;
 }
 
-/* Generic Classes*/
+                                            /* Generic Classes*/
 
 .comment {
     display: inline-block;
@@ -76,7 +76,7 @@ p {
     text-overflow:ellipsis; 
 }
 
-/* Nav Menu */
+                                                /* Nav Menu */
 #nav-container {
     display:flex;
     justify-content: flex-end;
@@ -166,7 +166,7 @@ p {
 
 
 
-/*  HEADER */
+                                                    /*  HEADER */
 header {
     display: flex;
     flex-direction: column;
@@ -206,7 +206,7 @@ header p {
     color: var(--main-txt-color1);
 } 
 
-/* MAIN SECTIONS */
+                                                /* MAIN SECTIONS */
 .divider-bottom {
     display: block;
     height: 1px;
@@ -375,7 +375,7 @@ grid.item1:hover .toolTipText {
     border: double var(--main-bg-color2);
     display: flex;
     /*max-height: 25em;*/
-    width: 40%;
+    width: 30%;
     margin: 1em;
 }
 
@@ -383,12 +383,14 @@ grid.item1:hover .toolTipText {
     display: flex;
     flex-direction: column;
     justify-items: center;
+    width: 100%;
 }
 
 .fullProjDesc h3 {
     background: var(--main-bg-color2);
     color: var(--main-txt-color2);
-    width: 100%;
+    *width: 100%;
+    display: none;
 }
 
 .fullProjDesc h4 {
@@ -402,7 +404,7 @@ grid.item1:hover .toolTipText {
     padding-left: 1em;
 }
 
-.fullProjDesc p {
+.fullProjDesc p.textOverflow {
     padding-left: 1.5em;
 }
 
@@ -453,7 +455,7 @@ div.projectSkills {
 
 #github img {
     padding: .5em;
-    width: 70%;
+    width: 3.2vw;
 }
 
 /* BLOG */
