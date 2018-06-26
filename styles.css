@@ -389,8 +389,7 @@ grid.item1:hover .toolTipText {
 .fullProjDesc h3 {
     background: var(--main-bg-color2);
     color: var(--main-txt-color2);
-    *width: 100%;
-    display: none;
+    width: 100%;
 }
 
 .fullProjDesc h4 {
@@ -410,6 +409,7 @@ grid.item1:hover .toolTipText {
 
 .fullProjDesc img {
     padding: .5em;
+    width: 100%;
 }
 
 .fullProjDesc a,
