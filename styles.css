@@ -155,7 +155,7 @@ section {
 button.button:hover, 
 button.button:focus {
     background: var(--main-bg-color2);
-    color: white;
+    color: var(--test-bg-color2);
     box-shadow: 0px 0px 10px var(--main-bg-color1) inset;
 }
     
@@ -277,14 +277,14 @@ grid.item1:hover .toolTipText {
     justify-content: space-around;
     align-content: space-around;
     grid-gap: 10px;
-    background: var(--test-bg-color1);
+    background: var(--main-bg-color1);
     width: 100%;
 }
 
 #projects article {
     border: double var(--main-bg-color2);
     display: flex;
-    max-height: 25em;
+    /*max-height: 25em;*/
     width: 40%;
     margin: 1em;
 }
@@ -295,20 +295,10 @@ grid.item1:hover .toolTipText {
     justify-items: center;
 }
 
-.fullProjDesc a,
-.fullProjDesc img {
-    text-align: center;
-    align-self: center;
-}
-
 .fullProjDesc h3 {
     background: var(--main-bg-color2);
     color: var(--main-txt-color2);
     width: 100%;
-}
-
-.fullProjDesc h3, h4{
-    padding-left: 1em;
 }
 
 .fullProjDesc h4 {
@@ -318,20 +308,30 @@ grid.item1:hover .toolTipText {
     padding-top: .5em;
 }
 
-.fullProjDesc img {
-    padding: .5em;
+.fullProjDesc h3, h4{
+    padding-left: 1em;
 }
+
 .fullProjDesc p {
     padding-left: 1.5em;
 }
 
-.fullProjDesc a {
-    text-decoration: none;
-    background: var(--main-bg-color2);
-    color: var(--main-txt-color2);
+.fullProjDesc img {
     padding: .5em;
+}
+
+.fullProjDesc a,
+.fullProjDesc button,
+.fullProjDesc img {
+    text-decoration: none;
+    align-self: center;
+}
+.fullProjDesc button.button {
+    width: 43%;
     margin-bottom: .5em;
 }
+
+
 
 #github {
     display: flex;
