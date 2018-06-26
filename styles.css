@@ -76,6 +76,97 @@ p {
     text-overflow:ellipsis; 
 }
 
+/* Nav Menu */
+#nav-container {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3em;
+    margin: 0 auto;
+    background: var(--main-bg-color2);
+}
+
+.menu-container {
+    cursor: pointer;
+    padding-right: 0;
+    text-align: right;
+    width: 100%;
+    height: 3em;
+}
+
+.menu-container #menu-bars-container {    
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s; 
+}
+
+#main-nav {
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    
+    padding-top: 2px;
+    position: absolute;
+    top: 2.5em;
+    transition: .5s;
+}
+
+#main-nav > div{
+    width: 100%;
+    background: var(--main-bg-color1);
+    box-shadow: 0 0 1px var(--main-bg-color2);
+
+}
+
+#main-nav a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    
+    background: var(--main-bg-color1);
+    border: .5px solid var(--main-bg-color2);
+    box-shadow: 0 0 1px var(--main-bg-color2) inset;
+    padding: 1em;
+    font-size: 4vw;
+    width: 100%
+}
+
+#main-nav a:visited {
+    text-decoration: none;
+}
+
+ /* OPEN MENU FUNCTIONALITY */
+ .show .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-4px, 6px);
+}
+
+.show .bar2 {opacity: 0;}
+
+.show .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-5px, -8px);
+}
+
+.show #main-nav > div{
+    height:20em;
+}
+
+
+
 /*  HEADER */
 header {
     display: flex;
@@ -230,11 +321,11 @@ button.button:focus {
     grid-column: 1 / 3;
 }
 
-/* Tool Tip Text TODO Needs Work */
+/* Tool Tip Text                                TODO Needs Work */
 .toolTipText {
     visibility: hidden;
     display: inline;
-    width: 120px;
+    
     background-color: var(--main-bg-color1);
     color: var(--main-txt-color1);
     text-align: center;
@@ -295,8 +386,6 @@ grid.item1:hover .toolTipText {
     justify-items: center;
 }
 
-
-
 .fullProjDesc h3 {
     background: var(--main-bg-color2);
     color: var(--main-txt-color2);
@@ -328,6 +417,7 @@ grid.item1:hover .toolTipText {
     text-decoration: none;
     align-self: center;
 }
+
 .fullProjDesc button.button {
     width: 43%;
     margin: .5em;
@@ -335,6 +425,7 @@ grid.item1:hover .toolTipText {
 
 .moreInfo {
     visibility: visible;
+    opacity: 1;
 }
 
 div.projectSkills {
@@ -363,7 +454,7 @@ div.projectSkills {
 
 #github img {
     padding: .5em;
-    width: 80%;
+    width: 70%;
 }
 
 /* BLOG */
@@ -414,9 +505,6 @@ footer small {
 
 /* MOBILE STYLES */
 @media only screen and (max-width: 400px) {
-    body {
-        background-color: var(--main-bg-color1); 
-    }
 
     html {
         font-size: 3.1vw;
@@ -426,96 +514,6 @@ footer small {
         font-size: 4.2vw;
     }
     
-    /* Nav Menu */
-    #nav-container {
-        display:flex;
-        justify-content: flex-end;
-        align-items: center;
-        position: fixed;
-        
-        top: 0;
-        left: 0;
-
-        width: 100%;
-        height: 3em;
-        margin: 0 auto;
-        background: var(--main-bg-color2);
-    }
-
-    .menu-container {
-        cursor: pointer;
-        padding-right: 0;
-        text-align: right;
-        width: 100%;
-        height: 3em;
-    }
-    
-    .menu-container #menu-bars-container {    
-        display: inline-block;
-        padding-right: 5px;
-    }
-
-    .bar1, .bar2, .bar3 {
-        width: 25px;
-        height: 2px;
-        background-color: white;
-        margin: 6px 0;
-        transition: 0.4s; 
-    }
-
-    #main-nav {
-        height: 0;
-        overflow: hidden;
-        width: 100%;
-        
-        padding-top: 2px;
-        position: absolute;
-        top: 2.5em;
-        transition: .8s;
-    }
-    
-    #main-nav > div{
-        width: 100%;
-        background: var(--main-bg-color1);
-        box-shadow: 0 0 1px var(--main-bg-color2);
-
-    }
-
-    #main-nav a {
-        display: flex;
-        justify-content: center;
-        text-decoration: none;
-        
-        background: var(--main-bg-color1);
-        border: .5px solid var(--main-bg-color2);
-        box-shadow: 0 0 1px var(--main-bg-color2) inset;
-        padding: 1em;
-        font-size: 4vw;
-        width: 100%
-    }
-
-    #main-nav a:visited {
-        text-decoration: none;
-    }
-
-
-    /* OPEN MENU FUNCTIONALITY */
-    .show .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-        transform: rotate(-45deg) translate(-4px, 6px);
-    }
-    
-    .show .bar2 {opacity: 0;}
-    
-    .show .bar3 {
-        -webkit-transform: rotate(45deg) translate(-8px, -8px);
-        transform: rotate(45deg) translate(-5px, -8px);
-    }
-    
-   .show #main-nav > div{
-        height:20em;
-    }
-
     /* PROJECTS */
     #projects article {
         flex-direction: column;
