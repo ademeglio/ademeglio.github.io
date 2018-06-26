@@ -331,8 +331,16 @@ grid.item1:hover .toolTipText {
     margin-bottom: .5em;
 }
 
+.moreInfo {
+    visibility: visible;
+}
 
+.fullProjDesc button.button a.gitReposit{
+    display: none;
+    opacity: 0;
+}
 
+/* Project Box Footer*/
 #github {
     display: flex;
     flex-direction: row-reverse;
