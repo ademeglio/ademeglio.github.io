@@ -117,7 +117,8 @@ p {
     height: 0;
     overflow: hidden;
     width: 100%;
-    
+    border: .5px solid var(--main-bg-color2);
+    box-shadow: 0 0 1px var(--main-bg-color2);
     padding-top: 2px;
     position: absolute;
     top: 2.5em;
@@ -140,8 +141,6 @@ p {
     border: .5px solid var(--main-bg-color2);
     box-shadow: 0 0 1px var(--main-bg-color2) inset;
     padding: 1em;
-    font-size: 4vw;
-    width: 100%
 }
 
 #main-nav a:visited {
@@ -514,6 +513,12 @@ footer small {
         font-size: 4.2vw;
     }
     
+    /* Mobile Nav Menu */
+    #main-nav {
+        font-size: 4vw;
+        width: 100%;
+    }
+
     /* PROJECTS */
     #projects article {
         flex-direction: column;
@@ -533,7 +538,36 @@ footer small {
 }
 /* DESKTOP STYLES */
 @media only screen and (min-width: 961px) {
-    body {
-        background-color: var(--test-bg-color3);
+   
+    html {
+        font-size: 1.05vw;
     }
+
+  
+    .container {
+        width: 75%;
+    }
+
+    /* Desktop Nav Menu */
+  #nav-container {
+      height: 2.2em;
+  }
+
+  .menu-container {
+      height: 2em;
+      padding-right: .5em;
+  }
+
+  #main-nav {
+      top: 2em;
+      width: 25%;
+      right: .5em;
+      
+  }
+
+    /* Desktop Footer */
+    footer {
+        height: 2em;
+    }
+
 }
