@@ -14,6 +14,15 @@ function toggleMenu(menuContainer) {
     }
 }
 
+// Close nav menu after clicking a selection
+const mainLinks = document.querySelectorAll('#main-nav a');
+const menuContainer = document.getElementById('menu-bars-container');
+for (let link of mainLinks) {
+  link.onclick = function() {
+    toggleMenu(menuContainer);
+  };
+}
+
 // otherInterests modal
 function showModal() {
     const modal = document.getElementById('aside-modal');
