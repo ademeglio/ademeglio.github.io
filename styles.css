@@ -509,7 +509,7 @@ footer small {
 
 
 /* MOBILE STYLES */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
 
     html {
         font-size: 3.1vw;
@@ -538,14 +538,58 @@ footer small {
 }
 
 /* TABLET STYLES */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-    body {
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /*body {
         background-color: var(--test-bg-color2);
+    }*/
+    html {
+        font-size: 2.05vw;
+    }
+
+  
+    .container {
+        width: 85%;
+    }
+
+    /* Tablet Nav Menu */
+    #nav-container {
+      height: 2.5em;
+    }
+
+    .menu-container {
+        height: 2em;
+        padding-right: .5em;
+    }
+
+    #main-nav {
+        top: 2.25em;
+        width: 25%;
+        right: .5em;
+      
+    }
+
+    /* Tablet Footer */
+    footer {
+        height: 3em;
+    }
+
+    footer small {
+        padding-top: 1.5em;
+        font-size: 1.5vw;
+    }
+
+    footer div {
+        width: 15%;
+        margin-left: .5em;
+    }
+    
+    footer a img{
+        max-width: 35px;
     }
 
 }
 /* DESKTOP STYLES */
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 1025px) {
    
     html {
         font-size: 1.05vw;
@@ -573,17 +617,23 @@ footer small {
       
     }
 
-    /* Desktop Projects */
-
-
-
     /* Desktop Footer */
     footer {
-        height: 2.5em;
+        height: 3em;
     }
 
     footer small {
         padding-top: 0.8vw;
         font-size: 0.8vw;
     }
+
+    footer div {
+        width: 8%;
+        margin-left: .5em;
+    }
+    
+    footer a img{
+        max-width: 35px;
+    }
+
 }
