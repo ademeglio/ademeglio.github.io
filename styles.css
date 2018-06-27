@@ -76,7 +76,22 @@ p {
     text-overflow:ellipsis; 
 }
 
-                                                /* Nav Menu */
+.button {
+    padding: .5em;
+    background: var(--main-bg-color1);
+    color: var(--main-txt-color1);
+    border: 1px solid var(--main-bg-color2);
+    box-shadow: 0px 0px 10px var(--main-bg-color2) inset; 
+}
+
+.button:hover {
+    background: var(--main-bg-color2);
+    color: var(--main-txt-color2);
+    box-shadow: 0px 0px 10px var(--main-bg-color1) inset;
+}
+
+
+                                                /* NAV MENU */
 #nav-container {
     display:flex;
     justify-content: flex-end;
@@ -206,7 +221,7 @@ header p {
     color: var(--main-txt-color1);
 } 
 
-                                                /* MAIN SECTIONS */
+                                             /* MAIN SECTIONS */
 .divider-bottom {
     display: block;
     height: 1px;
@@ -219,7 +234,7 @@ section {
     min-height: 100vh;
 }
 
-/* ABOUT ME */
+                                                /* ABOUT ME */
 
 #otherInterests, 
 #specialties {
@@ -229,24 +244,16 @@ section {
 
 
 /* ABOUT ME: Other Interests */
+#endingTag {
+    display: inline-block;
+    width: 1em;
+}
+
 #otherInterestsButton {
-    margin-left: -2em;
-    text-align: center;
-}
-
-.button {
-    padding: .5em;
-    background: var(--main-bg-color1);
-    color: var(--main-txt-color1);
-    border: 1px solid var(--main-bg-color2);
-    box-shadow: 0px 0px 10px var(--main-bg-color2) inset; 
-}
-
-button.button:hover, 
-button.button:focus {
-    background: var(--main-bg-color2);
-    color: var(--test-bg-color2);
-    box-shadow: 0px 0px 10px var(--main-bg-color1) inset;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: -1em;
 }
     
 #aside-modal {                  
@@ -359,7 +366,7 @@ grid.item1:hover .toolTipText {
     padding-top: 1em;
 }
 
-/* Projects */
+                                                /* Projects */
 #projects {
     display: flex;
     flex-flow: row wrap;
