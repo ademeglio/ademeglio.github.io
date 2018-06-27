@@ -420,6 +420,11 @@ grid.item1:hover .toolTipText {
     align-self: center;
 }
 
+.fullProjDesc:hover {
+    box-shadow: 0 0 15px 8px var(--main-bg-color2);
+}
+
+
 .fullProjDesc button.button {
     width: 43%;
     margin: .5em;
