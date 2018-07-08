@@ -43,3 +43,15 @@ function showModal() {
   }
   
   otherInterestsButton.onclick = showModal;
+
+  /* About Me Modal */
+  const aboutMe = document.querySelector('#aboutMe')
+  const header = document.querySelector('#headerContainer')
+
+  function showAboutMe() {
+    header.style.opacity = '0.5';
+    aboutMe.style.opacity = '1';
+  }
+
+  aboutMeButton.onclick = showAboutMe;
+
