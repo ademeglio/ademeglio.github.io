@@ -48,12 +48,12 @@ Any resources (images, etc) you use should be:
   * <article>
   * <footer>
 
-# Profesional Portfolio with JS
+# Profesional Portfolio with JS (Module 8)
 ## Overview
 * [ ] Upgrade your professional portfolio to include JS content. (No frameworks.)
 
 ## Tasks
-All requirements from iteration one of this project should still be there. You are encouraged to make a multi page site this time around.
+All requirements from iteration one of this project should still be there. _You are encouraged to make a multi page site this time around_.
 
 ### Additions to your site
 * [ ] Add an image carousel. This can be a carousel of screenshots of your projects (perhaps they link to your projects)

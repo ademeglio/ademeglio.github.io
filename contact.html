@@ -39,33 +39,18 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <div>
-                <h2>String <span class="varTypeColor">me</span> = 
-                    <span id=stringName>"Anthony J. DeMeglio"</span>;</h2>
-                <h1>career.toCoder(<span class="varTypeColor">me</span>);</h1>
-                <div id="comment-container">
-                    <span><span id="text" class="comment"></span> 
-                    <span id="blinker">|</span></span>
-                </div>
-                
-            </div>
+
+        <main>
             
-            <div class="photoContainer">
-                <img src="/images/AnthonyJDeMeglio_small.jpg" 
-                    srcset="images/AnthonyJDeMeglio_small.jpg 1x,
-                            images/AnthonyJDeMeglio_med.jpg 2x"
-                    alt="Handsome middle-aged man with glasses"
-                    style="max-width: 200px"/>
-            </div>
+            <section id="contactMe">
+                <h2>contact(<span class="varTypeColor">me</span>)</h2>
+                <span class="divider-bottom"></span>
+                <p>Questions or comments, please feel free to connect with the links
+                    located at the bottom of the page.
+                </p>
+            </section>
             
-            <div>
-                <p>Hi! My name is Anthony J. DeMeglio,<br>
-                full stack developer in training.<br>
-                Welcome to my little spot<br>
-                on the internet.</p>
-            </div>
-        </header>
+        </main>
         
         <div id="nav-container">
 
@@ -79,10 +64,10 @@
             
                 <nav id="main-nav">
                     <div>
+                        <a href="./index.html">Home(<span class="varTypeColor"></span>)</a>
                         <a href="./about.html">about(<span class="varTypeColor">me</span>)</a>
                         <a href="./projects.html">viewProjects(<span class="varTypeColor">me</span>)</a>
                         <a href="./blog.html">viewBlog(<span class="varTypeColor">me</span>)</a>
-                        <a href="./contact.html">contact(<span class="varTypeColor">me</span>)</a>
                     </div>
                 </nav>
             </div>
@@ -97,11 +82,6 @@
             <a href="./index.html"><small>&copy; 2018 Anthony J. DeMeglio</small></a>
         </footer>
     </div>
-    <script src="./typing.min.js"></script>  <!--www.cssscript.com/javascript-library-simulate-typing-effect-typing-js/-->
     <script src="./script.js"></script>
-    <script>
-        var typing=Typing("/&#42; change career to full stack developer &#42;/");
-        typing();
-    </script>
 </body>
 </html>
