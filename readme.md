@@ -1,4 +1,13 @@
 # Professional Portfolio
+
+### WISHLIST
+* [ ] Stretchy: In contacts section, either a contact form or arrow that points down to the email link.
+* [ ] Super Stretch: Comment section for the blog?; Side Bar with links to favorite posts
+* [ ] Links page with my favorite coding sites grouped by types
+
+#### Carousel Idea
+ * Pressing on the smaller portfolio photo links to multiple images while a description slides up from the bottom?
+
 ## Overview
 * [x] Create a portfolio site highlighting your work that can be shared with potential employers. Focus first on building a good structure, then later style and lay out with with CSS.
 
@@ -59,7 +68,7 @@ All requirements from iteration one of this project should still be there. _You 
 * [ ] Add an image carousel. This can be a carousel of screenshots of your projects (perhaps they link to your projects)
 * [x] Add a button in your navigation that will toggle the visibility of your actual site navigation.
 * [ ] Add a button and collapsable description to your portfolio projects so when the user clicks the button the descriptions expand and collapse
-* [ ] Create a modal box that pops up with your bio information whenever a button or link is pressed
+* [x] Create a modal box that pops up with your bio information whenever a button or link is pressed
 ### Stretch Goals
 * [x] Change layout with media queries based on viewport width. Feel free to use other specific media rules but base media queries should be based on viewport width. (Most common)
 * [x] Have the dropdown navigation menu only when at smaller viewports and the full navigation when at larger viewports _My menu is a smaller width when on a larger screen and_
