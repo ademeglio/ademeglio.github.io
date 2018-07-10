@@ -39,96 +39,165 @@
 </head>
 <body>
     <div class="container">
-        <div id="headerContainer">
-            <header>
-                <div>
-                    <h2>String <span class="varTypeColor">me</span> = 
-                        <span id=stringName>"Anthony J. DeMeglio"</span>;</h2>
-                    <h1>career.toCoder(<span class="varTypeColor">me</span>);</h1>
-                    <div id="comment-container">
-                        <span><span id="text" class="comment"></span> 
-                        <span id="blinker">|</span></span>
+        
+        <div class="topGridContainer">
+
+            <div id="headerGrid">
+                <header>
+                    <div>
+                        <h2>String <span class="varTypeColor">me</span> = 
+                            <span id=stringName>"Anthony J. DeMeglio"</span>;</h2>
+                        <h1>career.toCoder(<span class="varTypeColor">me</span>);</h1>
+                        <div id="comment-container">
+                            <span><span id="text" class="comment"></span> 
+                            <span id="blinker">|</span></span>
+                        </div>
+                        
                     </div>
                     
-                </div>
-                
-                <div class="photoContainer">
-                    <img src="/images/AnthonyJDeMeglio_small.jpg" 
-                        srcset="images/AnthonyJDeMeglio_small.jpg 1x,
-                                images/AnthonyJDeMeglio_med.jpg 2x"
-                        alt="Handsome middle-aged man with glasses"
-                        style="max-width: 200px"/>
-                </div>
-                
-                <div>
-                    <p>Hi! My name is Anthony J. DeMeglio,<br>
-                    full stack developer in training.<br>
-                    Welcome to my little spot<br>
-                    on the internet.</p>
-                </div>
-                <button class="button" id="aboutMeButton">about(<span class="varTypeColor">me</span>)</button>
-            </header>
-        </div>
-
-        <main id="aboutMe">
-
-            <section>
-                <h2>about(<span class="varTypeColor">me</span>) {</h2>
-                <span class="divider-bottom"></span>
-                <p>I wasn’t always a developer. For over a decade, 
-                    I had been designing lighting for events and corporate meetings. 
-                    Having first studied and trained at the <em>University of North Carolina 
-                    School of the Arts</em> which gave me the not only a design background 
-                    but the skills necessary to work, plan and execute large scale 
-                    projects under intense pressure. This allowed me to succeed also 
-                    as a  project manager where I coordinated the different 
-                    aspects that make up a production including audio, video, scenery, 
-                    decor, catering and the many other parts needed to create a successful 
-                    event.
-                </p>
-                <p>I love the creative process and figuring out how to put the puzzle pieces 
-                    together,  the process of partnering with clients and various teams to 
-                    ultimately give the guests an experience to remember.
-                </p>
-                <p>Now, as I work my way through the WeCanCodeIT coding bootcamp, I’m learning 
-                    new skills that still relate to the work I’ve done for so many years. Coding 
-                    is my new puzzle and I still have the opportunity to work in a creative team 
-                    environment. I am able to apply my detail oriented and analytical skills to 
-                    find creative solutions to complex problems. I am able to manage multiple 
-                    projects in a deadline-driven environment without breaking a sweat and 
-                    work with other people to troubleshoot and debug issues.
-                </p>
-            </section>
-
-            <section id="otherInterests">
-                <div>
-                    <h3>otherInterests() {</h3>
-                    <p>When I’m not solving challenges at work, I’m enjoying time with my awesome family. 
-                        When time permits, I enjoy photography, house projects and I’m currently building a kit car!
-                    </p>
-                    <div id="endingTag"><h3>}</h3></div>
-                    <div class="center">
-                        <button class="button" id="otherInterestsButton">otherInterests()</button>
+                    <div class="photoContainer">
+                        <img src="/images/AnthonyJDeMeglio_small.jpg" 
+                            srcset="images/AnthonyJDeMeglio_small.jpg 1x,
+                                    images/AnthonyJDeMeglio_med.jpg 2x"
+                            alt="Handsome middle-aged man with glasses"
+                            style="max-width: 200px"/>
                     </div>
-                </div>
-            </section>
+                    
+                    <div>
+                        <p>Hi! My name is Anthony J. DeMeglio,<br>
+                        full stack developer in training.<br>
+                        Welcome to my little spot<br>
+                        on the internet.</p>
+                    </div>
+                    <button class="button" id="aboutMeButton">about(<span class="varTypeColor">me</span>)</button>
+                </header>
+            </div>
 
-            <section id="specialties">
-                <div>
-                    <h3>Specialties() {</h3>
-                    <p>Java, Spring, Hibernate, TDD, JavaScript, jQuery, HTML5, CSS3, Flexbox, MVC, 
-                        Responsive/Mobile-First Design, Structured Query Language (SQL), Transactional Databases/ MSSQL, 
-                        Object Oriented Programming, Git, MS Access, Lighting Design, Organizing, Negotiating, AutoCad 2010, 
-                        Vectorworks, Unique Business Systems R2,  Adobe Lightroom, basic Adobe Photoshop Skills, 
-                        Quickbooks, Photography.
+        
+
+            <main id="aboutMe" >
+
+                <section>
+                    <h2>about(<span class="varTypeColor">me</span>) {</h2>
+                    <span class="divider-bottom"></span>
+                    <p>I wasn’t always a developer. For over a decade, 
+                        I had been designing lighting for events and corporate meetings. 
+                        Having first studied and trained at the <em>University of North Carolina 
+                        School of the Arts</em> which gave me the not only a design background 
+                        but the skills necessary to work, plan and execute large scale 
+                        projects under intense pressure. This allowed me to succeed also 
+                        as a  project manager where I coordinated the different 
+                        aspects that make up a production including audio, video, scenery, 
+                        decor, catering and the many other parts needed to create a successful 
+                        event.
                     </p>
-                    <h3>}</h3>
-                </div>
-            </section>
-            <h2>}</h2>
+                    <p>I love the creative process and figuring out how to put the puzzle pieces 
+                        together,  the process of partnering with clients and various teams to 
+                        ultimately give the guests an experience to remember.
+                    </p>
+                    <p>Now, as I work my way through the WeCanCodeIT coding bootcamp, I’m learning 
+                        new skills that still relate to the work I’ve done for so many years. Coding 
+                        is my new puzzle and I still have the opportunity to work in a creative team 
+                        environment. I am able to apply my detail oriented and analytical skills to 
+                        find creative solutions to complex problems. I am able to manage multiple 
+                        projects in a deadline-driven environment without breaking a sweat and 
+                        work with other people to troubleshoot and debug issues.
+                    </p>
+                </section>
 
-        </main>
-   
+                <section id="otherInterests">
+                    <div>
+                        <h3>otherInterests() {</h3>
+                        <p>When I’m not solving challenges at work, I’m enjoying time with my awesome family. 
+                            When time permits, I enjoy photography, house projects and I’m currently building a kit car!
+                        </p>
+                        <div id="endingTag"><h3>}</h3></div>
+                        <div class="center">
+                            <button class="button" id="otherInterestsButton">otherInterests()</button>
+                        </div>
+                    </div>
+                </section>
+
+                <div id="aside-modal">
+                    <aside>
+                        <h3>otherInterests() {</h3>
+                            <div class="grid-container">
+                                
+                                <div class="grid-item1"> 
+                                    <a href="https://www.imagesbydemeglio.com/" target="_blank">
+                                        <img src="./images/IBD_photos_small.png" 
+                                            alt="company logo, side profile silhouette of photographer taking a photo " 
+                                            style="max-width: 50px" />
+                                        <span class="toolTipText">Images By DeMeglio, my photography</span>
+                                    </a>
+                                </div>
+
+                                <div class="grid-item2">
+                                    <a href="http://www.brillianteventsandmeetings.com/" target="_blank">
+                                        <img src="./images/logo_brilliant.jpg"
+                                            alt="Brilliant Events and Meetings logo" 
+                                            style="max-width: 200px" />
+                                        <span class="toolTipText">Brilliant Events and Meetings, is my
+                                            own production company. I did not design the site but if
+                                            you are interested, you can see some of the events I have
+                                            worked on over the years.
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="grid-item3">
+                                    <a href="https://www.facebook.com/groups/CBUS818/" target="_blank">
+                                        <img src="./images/flogo_RGB_HEX-72.svg"
+                                            alt="faceBook logo"
+                                            style="max-width: 55px" />
+                                        <span class="toolTipText">CBUS818 FaceBook Group, build blog for my 
+                                            kit car project.</span>
+                                    </a>
+                                </div>
+                                
+                                <div class="grid-item4">
+                                    <a href="https://www.factoryfive.com/818/818c/" target="_blank">
+                                        <img src="./images/ffr-logo_small.jpg"
+                                            alt="Factory Five Racing Logo" 
+                                            style="max-width: 55px" />
+                                        <span class="toolTipText">Factory Five Racing 818C, the kit I'm in
+                                            the process of building </span>
+                                    </a>
+                                </div>
+                                
+                                <div class="grid-item5">
+                                    <a href="https://bartha.com/" target="_blank">
+                                        <img src="./images/BarthaLogo_-horizontal-1.png"
+                                            alt="Bartha logo" 
+                                            style="max-width: 200px" />
+                                        <span class="toolTipText">Bartha, the production company I
+                                            currently work for and that has been supportive of my
+                                            career change.
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        <h3>}</h3>
+                    </aside>
+                </div>
+
+                <section id="specialties">
+                    <div>
+                        <h3>Specialties() {</h3>
+                        <p>Java, Spring, Hibernate, TDD, JavaScript, jQuery, HTML5, CSS3, Flexbox, MVC, 
+                            Responsive/Mobile-First Design, Structured Query Language (SQL), Transactional Databases/ MSSQL, 
+                            Object Oriented Programming, Git, MS Access, Lighting Design, Organizing, Negotiating, AutoCad 2010, 
+                            Vectorworks, Unique Business Systems R2,  Adobe Lightroom, basic Adobe Photoshop Skills, 
+                            Quickbooks, Photography.
+                        </p>
+                        <h3>}</h3>
+                    </div>
+                </section>
+                <h2>}</h2>
+
+            </main>
+
+        </div>
 
         <div id="nav-container">
 

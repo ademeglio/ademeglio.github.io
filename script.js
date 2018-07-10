@@ -46,12 +46,20 @@ function showModal() {
 
   /* About Me Modal */
   const aboutMe = document.querySelector('#aboutMe')
-  const header = document.querySelector('#headerContainer')
+  const header = document.querySelector('#headerGrid')
 
   function showAboutMe() {
-    header.style.opacity = '0.5';
+    header.style.opacity = '0';
     aboutMe.style.opacity = '1';
+    
+  }
+
+  function hideAboutMe() {
+    header.style.opacity = '1';
+    aboutMe.style.opacity = '0';
   }
 
   aboutMeButton.onclick = showAboutMe;
+
+  // main.onclick = hideAboutMe;
 
