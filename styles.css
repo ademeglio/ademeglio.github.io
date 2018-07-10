@@ -131,7 +131,7 @@ p {
 }
 
 .menu-container {
-    cursor: pointer;
+    
     padding-right: 0;
     text-align: right;
     width: 100%;
@@ -139,6 +139,7 @@ p {
 }
 
 .menu-container #menu-bars-container {    
+    cursor: pointer;
     display: inline-block;
     padding-right: 5px;
 }
