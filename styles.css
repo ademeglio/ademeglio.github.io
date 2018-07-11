@@ -417,6 +417,10 @@ grid.item1:hover .toolTipText {
     background: yellow;
 }
 
+.carousel .view img {
+    width: 100%;
+}
+
 .arrowLeft {
     display: flex;
     grid-area: 1/ 1/ 2/ 2;
