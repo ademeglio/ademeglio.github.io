@@ -315,7 +315,7 @@ section {
     background: var(--main-bg-color1);
     color: var(--main-txt-color1);
     border: 1px solid #000;
-    width: 350px;
+    /* width: 350px; */
     /* height: 300px; */
     border-radius: .5em;
   
@@ -344,10 +344,9 @@ section {
     margin: 0;
 }
 
-
-.grid-item {
-    padding-right: 10px;
-    padding-left: 5px;
+.grid-item2 {
+    padding-right: 20px;
+    padding-left: 0;
 }
 
 .grid-item5 {
