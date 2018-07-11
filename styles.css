@@ -400,7 +400,7 @@ grid.item1:hover .toolTipText {
     
     background: var(--main-bg-color1); /* UPDATE AFTER SETUP */
     border: solid var(--main-bg-color2);
-    width: 70%;
+    width: 90%;
     height: 75vh;
     margin: 0 auto;
 }
@@ -475,9 +475,9 @@ grid.item1:hover .toolTipText {
     margin: 10px;
 }
 
-/* .carousel .thumbs img {
-    box-shadow: 0 0 0 0 var(--main-bg-color2);
-} */
+.carousel .thumbs img {
+    box-shadow: none;
+}
 
 .carousel .thumbs img:hover {
     cursor: pointer;
@@ -663,6 +663,11 @@ footer small {
         top: 2em;
     }
 
+    /* Hide Carousel */
+    .carousel {
+        display: none;
+    }
+
     /* PROJECTS */
     #projectsDiv article {
         flex-direction: column;
@@ -683,9 +688,8 @@ footer small {
         font-size: 2.05vw;
     }
 
-  
     .container {
-        width: 85%;
+        width: 80%;
     }
 
     /* Tablet Nav Menu */
@@ -705,6 +709,15 @@ footer small {
       
     }
 
+    /* Tablet Projects */
+    #projectsDiv {
+        display: none;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+    
     /* Tablet Footer */
     footer {
         height: 3em;
