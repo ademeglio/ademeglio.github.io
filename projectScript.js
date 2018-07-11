@@ -27,7 +27,7 @@
         //Project Name
         'Reviews Site Full Stack',
         // Project Description
-        'This is an evolution of the &quot;Reviews Site&quot; project where we built our first website to understand the use of Spring and Thymeleaf Templates. In this iteration, we extended the functionality by using the Spring Java Persistence API to learn how to connect to an internal H2 database. I found this project particulary rewarding because it relates to some of the functionality I will need to implement in the applications I will be creating at Bartha',
+        'This is an evolution of the &quot;Reviews Site&quot; project where we built our first website to understand the use of Spring and Thymeleaf Templates. In this iteration, we extended the functionality by using the Spring Java Persistence API to learn how to connect to an internal H2 database. I found this project particulary rewarding because it relates to some of the functionality I will need to implement in the applications I will be creating at my current employer, Bartha',
         // Project Skills
         "Eclipse IDE, Microsoft Visual Studio Code, Google Chrome Developer Tools, Git, Test Driven Development, Java, Junit, ThymeLeaf, HTML5, CSS3, JavaScript, Mobile-First Design, Responsive Design.",
         // Project Snapshot Image URL
@@ -56,7 +56,6 @@
         project3,
     ];
 
-    console.log(projects);
     // Carousel Setup
     let slideIndex = 0    // Index of currently displayed URL
     let rotation;           // For slide rotation
@@ -65,7 +64,6 @@
     const prev = document.querySelector('.carousel .arrowLeft .prev');
     const next = document.querySelector('.carousel .arrowRight .next');
     const view = document.querySelector('.carousel .view');
-   console.log(view);
     
     const thumbs = document.querySelector('.carousel .thumbs');
     const h3 = document.querySelector('.carousel .projectInfo .underline');
@@ -74,9 +72,8 @@
     const p2 = document.querySelector('.carousel .projectInfo .projectSkills');
     const h4B = document.querySelector('.carousel .projectInfo .endTag');
 
-    const thumbImageClass = document.querySelector('.carousel .thumbs img')
     const thumbImageStyleOn = "0 0 10px 8px var(--main-bg-color2)"
-    const thumbImageStyleOff = "0 0 0 0 var(--main-bg-color2)"
+    const thumbImageStyleOff = "none"
 
     // Create thumbnails
     for (let i = 0; i < projects.length; i++) {
@@ -89,6 +86,11 @@
         thumbImg.setAttribute('src', imgUrl);
         thumbs.appendChild(thumbImg);
 
+        
+        const thumbImageClass = document.getElementsByClassName('.carousel .thumbs img');
+       
+        console.log("THUMB CLASS: " + thumbImageClass)
+
         // When preview is clicked, display that image
         thumbImg.addEventListener('click', function() {
             slideIndex = i;
@@ -97,7 +99,7 @@
             highlightThumbOn();
         });
     }   
-    
+    console.log(highlightThumbOn)
     // Clicking "Left/Previous" button displays previous image
     prev.addEventListener('click', function() {
         prevSlide();
@@ -135,9 +137,11 @@
             slideIndex = projects.length - 1;
         }
         ShowSlide();
+
     }
 
     function nextSlide() {
+        
         slideIndex++;
         console.log("Anthony, the projects length is " + projects.length)
         console.log("slideIndex is now " + slideIndex)
@@ -158,11 +162,11 @@
     }, 2000);
 
     function highlightThumbOn() {
-        thumbImageClass.setAttribute(box-shadow, thumbImageStyleOn)
+        thumbImageClass.style.boxShadow = thumbImageStyleOn;
     }
 
     function hightlightThumbOff() {
-        thumbImageClass.setAttribute(box-shadow, thumbImageStyleOff)
+        thumbImageClass.style.boxShadow = thumbImageStyleOff;
     }
 
 
