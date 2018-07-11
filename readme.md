@@ -59,13 +59,13 @@ Any resources (images, etc) you use should be:
 
 # Profesional Portfolio with JS (Module 8)
 ## Overview
-* [ ] Upgrade your professional portfolio to include JS content. (No frameworks.)
+* [x] Upgrade your professional portfolio to include JS content. (No frameworks.)
 
 ## Tasks
 All requirements from iteration one of this project should still be there. _You are encouraged to make a multi page site this time around_.
 
 ### Additions to your site
-* [ ] Add an image carousel. This can be a carousel of screenshots of your projects (perhaps they link to your projects)
+* [x] Add an image carousel. This can be a carousel of screenshots of your projects (perhaps they link to your projects)
 * [x] Add a button in your navigation that will toggle the visibility of your actual site navigation.
 * [ ] Add a button and collapsable description to your portfolio projects so when the user clicks the button the descriptions expand and collapse
 * [x] Create a modal box that pops up with your bio information whenever a button or link is pressed
