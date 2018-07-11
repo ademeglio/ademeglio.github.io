@@ -56,12 +56,82 @@
         project3,
     ];
 
+    // Carousel Setup
+    let slideIndex = 0    // Index of currently displayed URL
+    let rotation;           // For slide rotation
+
+    // Carousel DOM elements
+    const prev = document.querySelector('.carousel .arrowLeft .prev');
+    const next = document.querySelector('.carousel .arrowRight .next');
+    const view = document.querySelector('.carousel .view');
+   
+    
+    const thumbs = document.querySelector('.carousel .thumbs');
+    const h3 = document.querySelector('.carousel .projectInfo .underline');
+    const p1 = document.querySelector('.carousel .projectInfo .projectDesc');
+    const h4A = document.querySelector('.carousel .projectInfo .skillHdr');
+    const p2 = document.querySelector('.carousel .projectInfo .projectSkills');
+    const h4B = document.querySelector('.carousel .projectInfo .endTag');
+
+    // Create thumbnails
+    for (let i = 0; i < projects.length; i++) {
+        
+        // Create the <img> element
+        let imgUrl = projects[i].imageUrl;
+        const thumbImg = document.createElement('img');
+        thumbImg.setAttribute('src', imgUrl);
+        thumbs.appendChild(thumbImg);
+
+        // When preview is clicked, display that image
+        thumbImg.addEventListener('click', function() {
+            slideIndex = i;
+            ShowSlide();
+            ClearInterval(rotation);
+        });
+    }   
+    
+    // Carousel previous or next image
+    function ChangeSlide(n) {
+        slideIndex += n;
+        if (slideIndex < 0) {
+            slideIndex = projects.length - 1;
+        }
+        if (slideIndex === projects.length) {
+            currentIndex = 0;
+        }
+        ShowSlide();
+        clearInterval(rotation);
+    }
+
+    // Display slide in view based on the value of SlideIndex
+    function ShowSlide() {
+        view.innterHTML = '';
+        const imgUrl = projects[slideIndex].imageUrl;
+        const link = document.createElement('a');
+        const img = document.createElement('img');
+        let projGitRepo = projects[slideIndex].gitRepo;
+        link.setAttribute('href', projGitRepo)
+        view.appendChild(link);
+        img.setAttribute('src', imgUrl);
+        view.link.appendChild(img);
+    }
+
+    // Display the first slide in the carousel
+    ShowSlide();
+
+    // Begin by setting an interval to loop through the images
+    // Store is in a variable to be cleared on user interaction
+    rotation = setInterval(function() {
+        ChangeSlide(1);
+    }, 2000);
+
+
+
+    
     // create html elements in #projectsDiv
     const projectsDiv = document.getElementById("projectsDiv");
 
-    // TODO: Create the HTML elements within #projectsDiv for each project
-    for (let project of projects) {
-        // You should make sure the carausel is going to work first this is harder?
+    function GenerateProjects() {
 
         // Create div with class of "fullProjDesc" var div1
         // Create h3 with class of "underline"
@@ -79,7 +149,7 @@
         
 
 
-        let art = projectsDiv.createElement("article");
+        // let art = projectsDiv.createElement("article");
 
         
 
@@ -88,27 +158,10 @@
   
     // TODO: Create image carousel. As you cycle through the images, the selected image should be larger(have the most focus) and the description should slide out when clicked or something like that.
     // CAROUSEL
-    let slideIndex = 1;
+ 
 
-    // Carousel previous or next image
-    function PlusDivs(n) {
-        ShowDivs(slideIndex += n);
-    }
 
-    // Carousel show image
-    function ShowDivs(n) {
-        let i;
-        const x = document.getElementsByClassName("imgs");
-        if (n > x.length) {
-            slideIndex = 1
-        };
-        if (n < 1) {
-            slideIndex = x.length;
-        }
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        x[slideIndex-1].style.display = "block";
-    }
+
+  
 
 })();
