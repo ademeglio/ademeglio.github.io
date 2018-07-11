@@ -74,6 +74,10 @@
     const p2 = document.querySelector('.carousel .projectInfo .projectSkills');
     const h4B = document.querySelector('.carousel .projectInfo .endTag');
 
+    const thumbImageClass = document.querySelector('.carousel .thumbs img')
+    const thumbImageStyleOn = "0 0 10px 8px var(--main-bg-color2)"
+    const thumbImageStyleOff = "0 0 0 0 var(--main-bg-color2)"
+
     // Create thumbnails
     for (let i = 0; i < projects.length; i++) {
         console.log("THUMBNAIL INDEX: " + slideIndex);
@@ -90,6 +94,7 @@
             slideIndex = i;
             ShowSlide();
             clearInterval(rotation);
+            highlightThumbOn();
         });
     }   
     
@@ -118,6 +123,9 @@
         link.appendChild(img);
         console.log(projects[slideIndex].imageUrl);
         console.log(view);
+        h3.innerHTML = projects[slideIndex].projectName;
+        p1.innerHTML = projects[slideIndex].description;
+        p2.innerHTML = projects[slideIndex].skills;
     }
 
     // Change slideIndex, looping if needed, then show slide
@@ -145,10 +153,17 @@
 
     // Begin by setting an interval to loop through the images
     // Store is in a variable to be cleared on user interaction
-    // rotation = setInterval(function() {
-    //     nextSlide();
-    // }, 2000);
+    rotation = setInterval(function() {
+        nextSlide();
+    }, 2000);
 
+    function highlightThumbOn() {
+        thumbImageClass.setAttribute(box-shadow, thumbImageStyleOn)
+    }
+
+    function hightlightThumbOff() {
+        thumbImageClass.setAttribute(box-shadow, thumbImageStyleOff)
+    }
 
 
     

@@ -471,21 +471,32 @@ grid.item1:hover .toolTipText {
 }
 
 .carousel .thumbs img {
-    height: 40px;
-    border: 1px solid var(--main-bg-color1);
-    margin: 0 10px;
+    height: 80%;
+    border: 1px solid var(--main-bg-color2);
+    margin: 10px;
+}
+
+/* .carousel .thumbs img {
+    box-shadow: 0 0 0 0 var(--main-bg-color2);
+} */
+
+.carousel .thumbs img:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 8px var(--main-bg-color2);
 }
 
 div .projectInfo {
     grid-area: 3/ 1/ 4/ 4;
     background: var(--main-bg-color2);
     color: var(--main-txt-color2);
+    transition: 2s;
 }
 
 .projectInfo p {
     display:inline-block;
     padding-top: 0;
     padding-bottom: 0;
+    font-size: .75em;
 }
 
 .projectInfo h3,
