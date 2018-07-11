@@ -341,11 +341,11 @@ section {
 
 .grid-container div img {
     width: 100%;
-    padding-top: 5px;
     margin: 0;
 }
 
-.grid-item2 {
+
+.grid-item {
     padding-right: 10px;
     padding-left: 5px;
 }
@@ -385,8 +385,8 @@ grid.item1:hover .toolTipText {
 
 .grid-container div img:hover,
 .grid-container div img:focus {
-    padding: 5px;
-    box-shadow: 0px 0px 10px var(--main-bg-color2) inset;
+    /* padding: 5px; */
+    box-shadow: 0px 0px 10px var(--main-bg-color2);
 }
 
 .grid-container h3
@@ -489,7 +489,6 @@ div .projectInfo {
     grid-area: 3/ 1/ 4/ 4;
     background: var(--main-bg-color2);
     color: var(--main-txt-color2);
-    transition: 2s;
 }
 
 .projectInfo p {
