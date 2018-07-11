@@ -1,4 +1,5 @@
-(function() {
+(function() {   
+    
     // Project Constructor
     function Project(projectName, description, skills, imageUrl, gitRepo)  {
     this.projectName = projectName;
@@ -86,5 +87,28 @@
 
   
     // TODO: Create image carousel. As you cycle through the images, the selected image should be larger(have the most focus) and the description should slide out when clicked or something like that.
+    // CAROUSEL
+    let slideIndex = 1;
+
+    // Carousel previous or next image
+    function PlusDivs(n) {
+        ShowDivs(slideIndex += n);
+    }
+
+    // Carousel show image
+    function ShowDivs(n) {
+        let i;
+        const x = document.getElementsByClassName("imgs");
+        if (n > x.length) {
+            slideIndex = 1
+        };
+        if (n < 1) {
+            slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+    }
 
 })();
