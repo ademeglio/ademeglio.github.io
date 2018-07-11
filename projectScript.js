@@ -56,6 +56,7 @@
         project3,
     ];
 
+    console.log(projects);
     // Carousel Setup
     let slideIndex = 0    // Index of currently displayed URL
     let rotation;           // For slide rotation
@@ -64,7 +65,7 @@
     const prev = document.querySelector('.carousel .arrowLeft .prev');
     const next = document.querySelector('.carousel .arrowRight .next');
     const view = document.querySelector('.carousel .view');
-   
+   console.log(view);
     
     const thumbs = document.querySelector('.carousel .thumbs');
     const h3 = document.querySelector('.carousel .projectInfo .underline');
@@ -75,45 +76,68 @@
 
     // Create thumbnails
     for (let i = 0; i < projects.length; i++) {
-        
+        console.log("THUMBNAIL INDEX: " + slideIndex);
+        console.log("i === " + i);
         // Create the <img> element
         let imgUrl = projects[i].imageUrl;
+        console.log(imgUrl);
         const thumbImg = document.createElement('img');
         thumbImg.setAttribute('src', imgUrl);
         thumbs.appendChild(thumbImg);
 
         // When preview is clicked, display that image
         thumbImg.addEventListener('click', function() {
-            slideIndex = i;
+            slideIndex = i;s
             ShowSlide();
-            ClearInterval(rotation);
+            clearInterval(rotation);
         });
     }   
     
-    // Carousel previous or next image
-    function ChangeSlide(n) {
-        slideIndex += n;
-        if (slideIndex < 0) {
-            slideIndex = projects.length - 1;
-        }
-        if (slideIndex === projects.length) {
-            currentIndex = 0;
-        }
-        ShowSlide();
+    // Clicking "Left/Previous" button displays previous image
+    prev.addEventListener('click', function() {
+        prevSlide();
         clearInterval(rotation);
-    }
+    })
+
+    // Clicking "Right/Next" button displays next image
+    next.addEventListener('click', function() {
+        nextSlide();
+        clearInterval(rotation);
+    })
 
     // Display slide in view based on the value of SlideIndex
     function ShowSlide() {
+        console.log(projects[slideIndex].imageUrl);
+        
         view.innterHTML = '';
         const imgUrl = projects[slideIndex].imageUrl;
         const link = document.createElement('a');
         const img = document.createElement('img');
         let projGitRepo = projects[slideIndex].gitRepo;
         link.setAttribute('href', projGitRepo)
-        view.appendChild(link);
         img.setAttribute('src', imgUrl);
-        view.link.appendChild(img);
+        view.appendChild(link);
+        link.appendChild(img);
+    }
+
+    // Change slideIndex, looping if needed, then show slide
+    function prevSlide() {
+        slideIndex--;
+        if (slideIndex < 0) {
+            slideIndex = projects.length - 1;
+        }
+        ShowSlide();
+    }
+
+    function nextSlide() {
+        slideIndex++;
+        console.log("Anthony, the projects length is " + projects.length)
+        console.log("slideIndex is now " + slideIndex)
+        if (slideIndex > projects.length) {
+            currentIndex = 0;
+        }
+        console.log("SLIDE INDEX: " + slideIndex)
+        ShowSlide();
     }
 
     // Display the first slide in the carousel
@@ -122,16 +146,16 @@
     // Begin by setting an interval to loop through the images
     // Store is in a variable to be cleared on user interaction
     rotation = setInterval(function() {
-        ChangeSlide(1);
+        nextSlide();
     }, 2000);
 
 
 
     
     // create html elements in #projectsDiv
-    const projectsDiv = document.getElementById("projectsDiv");
+    // const projectsDiv = document.getElementById("projectsDiv");
 
-    function GenerateProjects() {
+    // function GenerateProjects() {
 
         // Create div with class of "fullProjDesc" var div1
         // Create h3 with class of "underline"
@@ -153,7 +177,7 @@
 
         
 
-    }
+    // }
 
   
     // TODO: Create image carousel. As you cycle through the images, the selected image should be larger(have the most focus) and the description should slide out when clicked or something like that.
