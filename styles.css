@@ -397,11 +397,11 @@ grid.item1:hover .toolTipText {
 .carousel {
     display: grid;
     grid-template-columns: 3em auto 3em ;
-    grid-template-rows: 4fr 1fr 1fr;
+    grid-template-rows: 6fr 2fr 1.5fr;
     
     background: var(--main-bg-color1); /* UPDATE AFTER SETUP */
     border: solid var(--main-bg-color2);
-    width: 80%;
+    width: 70%;
     height: 75vh;
     margin: 0 auto;
 }

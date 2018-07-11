@@ -18,9 +18,9 @@
         // Project Skills
         "Eclipse IDE, Git, Java, Junit, Test Driven Development, Pair-Programming.",
         // Project Snapshot Image URL
-        "./images/VisualCode_med.png",
+        "./images/eclipseIde_med.png",
         // Project GitHub URL
-        "https://github.com/ademeglio/ademeglio.github.io"
+        "https://github.com/ademeglio/virtual-pets-amok"
     )
 
     const project2 = new Project(
@@ -77,17 +77,17 @@
     // Create thumbnails
     for (let i = 0; i < projects.length; i++) {
         console.log("THUMBNAIL INDEX: " + slideIndex);
-        console.log("i === " + i);
+        console.log("THUMBNAIL i === " + i);
         // Create the <img> element
         let imgUrl = projects[i].imageUrl;
-        console.log(imgUrl);
+        
         const thumbImg = document.createElement('img');
         thumbImg.setAttribute('src', imgUrl);
         thumbs.appendChild(thumbImg);
 
         // When preview is clicked, display that image
         thumbImg.addEventListener('click', function() {
-            slideIndex = i;s
+            slideIndex = i;
             ShowSlide();
             clearInterval(rotation);
         });
@@ -106,18 +106,18 @@
     })
 
     // Display slide in view based on the value of SlideIndex
-    function ShowSlide() {
-        console.log(projects[slideIndex].imageUrl);
-        
-        view.innterHTML = '';
+    function ShowSlide() {        
+        view.innerHTML = '';
         const imgUrl = projects[slideIndex].imageUrl;
         const link = document.createElement('a');
         const img = document.createElement('img');
         let projGitRepo = projects[slideIndex].gitRepo;
-        link.setAttribute('href', projGitRepo)
+        link.setAttribute('href', projGitRepo);
         img.setAttribute('src', imgUrl);
         view.appendChild(link);
         link.appendChild(img);
+        console.log(projects[slideIndex].imageUrl);
+        console.log(view);
     }
 
     // Change slideIndex, looping if needed, then show slide
@@ -133,8 +133,8 @@
         slideIndex++;
         console.log("Anthony, the projects length is " + projects.length)
         console.log("slideIndex is now " + slideIndex)
-        if (slideIndex > projects.length) {
-            currentIndex = 0;
+        if (slideIndex === projects.length) {
+            slideIndex = 0;
         }
         console.log("SLIDE INDEX: " + slideIndex)
         ShowSlide();
@@ -145,9 +145,9 @@
 
     // Begin by setting an interval to loop through the images
     // Store is in a variable to be cleared on user interaction
-    rotation = setInterval(function() {
-        nextSlide();
-    }, 2000);
+    // rotation = setInterval(function() {
+    //     nextSlide();
+    // }, 2000);
 
 
 
