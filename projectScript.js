@@ -96,10 +96,8 @@
             slideIndex = i;
             ShowSlide();
             clearInterval(rotation);
-            highlightThumbOn();
         });
     }   
-    console.log(highlightThumbOn)
     // Clicking "Left/Previous" button displays previous image
     prev.addEventListener('click', function() {
         prevSlide();
@@ -128,6 +126,19 @@
         h3.innerHTML = projects[slideIndex].projectName;
         p1.innerHTML = projects[slideIndex].description;
         p2.innerHTML = projects[slideIndex].skills;
+
+        // clear style/class of all thumbs
+        const thumbs = document.querySelectorAll('.thumbs img');
+        for (let i = 0; i < thumbs.length; i++) {
+
+            if (i === slideIndex) {
+                thumbs[i].classList.add('selected')
+            }
+            else {
+                thumbs[i].classList.remove('selected');
+            }
+        }
+        
     }
 
     // Change slideIndex, looping if needed, then show slide
@@ -161,7 +172,8 @@
         nextSlide();
     }, 2000);
 
-    function highlightThumbOn() {
+    function highlightThumbOn(slideIndex) {
+        
         thumbImageClass.style.boxShadow = thumbImageStyleOn;
     }
 

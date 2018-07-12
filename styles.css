@@ -475,8 +475,12 @@ grid.item1:hover .toolTipText {
     margin: 10px;
 }
 
-.carousel .thumbs img {
+/* .carousel .thumbs img {
     box-shadow: none;
+} */
+
+.carousel .thumbs img.selected {
+    box-shadow: 0 0 10px 8px var(--main-bg-color2);
 }
 
 .carousel .thumbs img:hover {
