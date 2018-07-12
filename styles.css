@@ -396,7 +396,7 @@ grid.item1:hover .toolTipText {
 .carousel {
     display: grid;
     grid-template-columns: 3em auto 3em ;
-    grid-template-rows: 6fr 2fr 1.5fr;
+    grid-template-rows: 6fr 2fr 2fr;
     
     background: var(--main-bg-color1); /* UPDATE AFTER SETUP */
     border: solid var(--main-bg-color2);
@@ -475,9 +475,6 @@ grid.item1:hover .toolTipText {
     margin: 10px;
 }
 
-/* .carousel .thumbs img {
-    box-shadow: none;
-} */
 
 .carousel .thumbs img.selected {
     box-shadow: 0 0 10px 8px var(--main-bg-color2);
