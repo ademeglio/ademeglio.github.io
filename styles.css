@@ -259,6 +259,9 @@ section {
 #aboutMe {
     top:0;
     opacity: 0;
+}
+
+#aboutMe {
     transition: opacity 4s;
 }
 
