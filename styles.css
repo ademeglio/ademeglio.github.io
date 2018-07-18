@@ -261,10 +261,6 @@ section {
     opacity: 0;
 }
 
-#aboutMe {
-    transition: opacity 4s;
-}
-
 #otherInterests, 
 #specialties {
     padding-top: 0px;

@@ -50,6 +50,7 @@ function showModal() {
 
   function showAboutMe() {
     header.style.opacity = '0';
+    aboutMe.style.transition = 'opacity 4s';
     aboutMe.style.opacity = '1';
     
   }
